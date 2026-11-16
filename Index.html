@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZimCryptoHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu-container">
+
+<div class="brand">
+<img src="logo.png" alt="Logo" class="logo-img">
+<h2>ZimCryptoHub</h2>
+</div>
+
+<div class="header-actions">
+
+<button class="theme-btn" onclick="toggleTheme()">
+🌙
+</button>
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+</div>
+
+<nav id="mobileMenu">
+
+<a href="#rates">Rates</a>
+
+<a href="#scam">Scam Check</a>
+
+<a href="#academy">Academy</a>
+
+<a href="#providers">Providers</a>
+
+<a href="#calculator">Calculator</a>
+
+</nav>
+
+</div>
+
+<header>
+
+<h1>ZimCryptoHub</h1>
+
+<p>
+Zimbabwe's Crypto Intelligence & Security Platform
+</p>
+
+<button onclick="loadPrices()">
+Load Market Prices
+</button>
+
+</header>
+
+<section id="rates">
+
+<h2>Market Rates</h2>
+
+<div id="prices"></div>
+
+</section>
+
+<section id="scam">
+
+<h2>Scam Checker</h2>
+
+<input
+id="wallet"
+placeholder="Enter Wallet Address">
+
+<button onclick="checkWallet()">
+Check Wallet
+</button>
+
+<div id="result"></div>
+
+</section>
+
+<section id="academy">
+
+<h2>Crypto Academy</h2>
+
+<div class="card">
+
+<h3>Bitcoin Basics</h3>
+
+<p>
+Learn how Bitcoin works safely.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>P2P Trading</h3>
+
+<p>
+Understand peer-to-peer trading.
+</p>
+
+</div>
+
+</section>
+
+<section id="providers">
+
+<h2>Verified Providers</h2>
+
+<div class="card">
+
+<h3>Zim OTC Trader</h3>
+
+<p>Verified Provider</p>
+
+</div>
+
+<div class="card">
+
+<h3>Crypto Consultancy Zimbabwe</h3>
+
+<p>Trusted Consultant</p>
+
+</div>
+
+</section>
+
+<section id="calculator">
+
+<h2>Profit Calculator</h2>
+
+<input
+id="buy"
+placeholder="Buy Price">
+
+<input
+id="sell"
+placeholder="Sell Price">
+
+<input
+id="qty"
+placeholder="Quantity">
+
+<button onclick="calculateProfit()">
+Calculate
+</button>
+
+<h3 id="profit"></h3>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
